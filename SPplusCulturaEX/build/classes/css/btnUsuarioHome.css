@@ -1,0 +1,17 @@
+.button {
+    -fx-background-color: linear-gradient( #6699ff , silver);
+    -fx-text-fill: black;   
+    -fx-border-color: transparent;    
+}
+
+.button:hover {
+    -fx-background-color: silver;
+    -fx-text-fill: white;   
+}
+
+.button:pressed, .button:default:hover:pressed {
+   -fx-background-color: black;
+  -fx-text-fill: white;
+}
+
+

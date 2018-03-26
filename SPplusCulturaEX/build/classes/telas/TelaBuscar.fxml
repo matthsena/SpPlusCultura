@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.ControleTelaBuscar">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="250.0" pickOnBounds="true">
+         <image>
+            <Image url="@../imagens/ParteSuperior%20-%20Cópia%20-%20Cópia.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="14.0" text="Disponibilidade">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkGratuito" focusTraversable="false" layoutX="20.0" layoutY="56.0" mnemonicParsing="false" text="Gratuito">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#909090" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </CheckBox>
+      <CheckBox fx:id="checkPago" focusTraversable="false" layoutX="160.0" layoutY="56.0" mnemonicParsing="false" text="Pago">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#909090" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </CheckBox>
+      <Label layoutX="88.0" layoutY="115.0" text="Periodo">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkDiurno" focusTraversable="false" layoutX="20.0" layoutY="158.0" mnemonicParsing="false" text="Diurno">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#909090" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </CheckBox>
+      <CheckBox fx:id="check24hrs" focusTraversable="false" layoutX="160.0" layoutY="158.0" mnemonicParsing="false" text="24hrs">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#909090" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </CheckBox>
+      <CheckBox fx:id="checkNoturno" focusTraversable="false" layoutX="20.0" layoutY="203.0" mnemonicParsing="false" text="Noturno">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#909090" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </CheckBox>
+      <Button fx:id="btnBuscar" focusTraversable="false" layoutX="12.0" layoutY="245.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="227.0" stylesheets="@../css/btnSistemaHome.css" text="Buscar">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

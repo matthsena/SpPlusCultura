@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.ControleTelaLocal">
+   <children>
+      <ImageView fitHeight="23.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../imagens/ParteSuperior.jpg" />
+         </image>
+      </ImageView>
+      <Button id="btnSair" fx:id="btnSair" focusTraversable="false" layoutX="565.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" stylesheets="@../css/styleButtonsSair.css" text="x" textAlignment="CENTER" textFill="WHITE" />
+      <TabPane focusTraversable="false" layoutY="23.0" prefHeight="377.0" prefWidth="600.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Informações">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="377.0" fitWidth="571.0" opacity="0.52" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imagens/i09.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnAddFavorito" focusTraversable="false" layoutX="412.0" layoutY="320.0" mnemonicParsing="false" prefHeight="36.0" stylesheets="@../css/btnSistemaHome.css" text="Add aos favoritos">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                        <Label fx:id="lblNomeLocal" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="557.0" text="NOME DO LOCAL" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.9904761904761905">
+                                 <stops>
+                                    <Stop color="RED" />
+                                    <Stop color="BLACK" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label fx:id="lblEndereco" layoutX="14.0" layoutY="72.0" maxWidth="555.0" prefHeight="21.0" prefWidth="555.0" text="Endereço" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblContato" layoutX="14.0" layoutY="128.0" maxWidth="555.0" prefHeight="21.0" prefWidth="555.0" text="Contato" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblDisp" layoutX="14.0" layoutY="187.0" maxWidth="555.0" prefHeight="21.0" prefWidth="555.0" text="Disponibilidade" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblPeriodo" layoutX="14.0" layoutY="253.0" maxWidth="555.0" prefHeight="21.0" prefWidth="555.0" text="Periodo" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnRelatorio" focusTraversable="false" layoutX="14.0" layoutY="320.0" mnemonicParsing="false" prefHeight="36.0" stylesheets="@../css/btnSistemaHome.css" text="Gerar relatório ">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="Eventos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="377.0" fitWidth="571.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imagens/ialfa.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tableview" focusTraversable="false" layoutX="61.0" layoutY="14.0" prefHeight="300.0" prefWidth="450.0">
+                          <columns>
+                              <TableColumn fx:id="ColumnId" editable="false" prefWidth="60.0" resizable="false" text="Id" />
+                            <TableColumn fx:id="columnEvento" editable="false" prefWidth="190.0" resizable="false" sortable="false" text="Evento" />
+                            <TableColumn fx:id="columnData" editable="false" minWidth="0.0" prefWidth="190.0" resizable="false" sortable="false" text="Data" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnAddEvento" focusTraversable="false" layoutX="226.0" layoutY="327.0" mnemonicParsing="false" prefHeight="36.0" stylesheets="@../css/btnSistemaHome.css" text="Add a agenda">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Descrição">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="txtArea" editable="false" focusTraversable="false" prefHeight="377.0" prefWidth="571.0" promptText="História" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font></TextArea>
+                     </children></AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

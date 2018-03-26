@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: RoyalBlue;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.ControleTelaInicial">
+   <children>
+      <AnchorPane id="formInicial" fx:id="formInicial" focusTraversable="true" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="backImg3" fitHeight="377.0" fitWidth="600.0" layoutY="23.0" pickOnBounds="true" visible="false">
+               <image>
+                  <Image url="@../imagens/SP2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="backImg1" fitHeight="377.0" fitWidth="600.0" layoutY="23.0" pickOnBounds="true" visible="false">
+               <image>
+                  <Image url="@../imagens/SP0.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="backImg2" fitHeight="377.0" fitWidth="600.0" layoutY="23.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imagens/SP1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="600.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imagens/ParteSuperior.jpg" />
+               </image>
+            </ImageView>
+            <Button id="btnSair" fx:id="btnSair" focusTraversable="false" layoutX="565.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" stylesheets="@../css/styleButtonsSair.css" text="x" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnEntrar" focusTraversable="false" layoutX="245.0" layoutY="115.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" stylesheets="@../css/styleButtonsClassicos.css" text="Entrar" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Button>
+            <Button fx:id="btnRegistrar" focusTraversable="false" layoutX="245.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" stylesheets="@../css/styleButtonsClassicos.css" text="Registrar" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSite" focusTraversable="false" layoutX="245.0" layoutY="245.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" stylesheets="@../css/styleButtonsClassicos.css" text="Site" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAlterarFundo" focusTraversable="false" layoutX="14.0" layoutY="34.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" stylesheets="@../css/styleButtonsClassicos.css" text="Alterar fundo" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneDireito" layoutX="600.0" layoutY="23.0" prefHeight="377.0" prefWidth="200.0" style="-fx-background-color: purple;">
+         <children>
+            <Label fx:id="lblTitulo" focusTraversable="false" layoutX="20.0" layoutY="15.0" prefHeight="37.0" prefWidth="160.0" text="lblTitulo" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnOcultar" focusTraversable="false" layoutX="14.0" layoutY="338.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="69.0" stylesheets="@../css/styleButtonsRoxos.css" text="Ocultar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAcaoBotao" focusTraversable="false" layoutX="117.0" layoutY="338.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="69.0" stylesheets="@../css/styleButtonsRoxos.css" text="Ação" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtUsuario" focusTraversable="false" layoutX="25.0" layoutY="125.0" prefWidth="150.0" promptText="Usuário" />
+            <TextField fx:id="txtEmail" focusTraversable="false" layoutX="25.0" layoutY="260.0" prefWidth="150.0" promptText="E-mail" />
+            <PasswordField fx:id="txtSenha" focusTraversable="false" layoutX="25.0" layoutY="170.0" prefWidth="150.0" promptText="Senha" />
+            <PasswordField fx:id="txtConfirmarSenha" focusTraversable="false" layoutX="25.0" layoutY="215.0" prefWidth="150.0" promptText="Confirmar Senha" />
+            <TextField fx:id="txtNome" focusTraversable="false" layoutX="25.0" layoutY="80.0" prefHeight="25.0" prefWidth="150.0" promptText="Nome" />
+            <Label fx:id="lblNome" focusTraversable="false" layoutX="79.0" layoutY="59.0" text="Nome" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUsuario" focusTraversable="false" layoutX="73.0" layoutY="105.0" text="Usuário" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSenha" focusTraversable="false" layoutX="79.0" layoutY="150.0" text="Senha" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblConfirmSenha" focusTraversable="false" layoutX="36.0" layoutY="195.0" text="Confirmar a senha" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" focusTraversable="false" layoutX="78.0" layoutY="240.0" text="E-mail" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

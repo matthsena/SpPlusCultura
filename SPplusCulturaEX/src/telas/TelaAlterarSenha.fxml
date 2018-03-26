@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: lightGray;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.ControleTelaAlterarSenha">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../imagens/ialfa.jpg" />
+         </image>
+      </ImageView>
+      <Label focusTraversable="false" layoutX="75.0" layoutY="20.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: black;" text="    Senha Antiga   ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#463131" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Label focusTraversable="false" layoutX="75.0" layoutY="90.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: black;" text="     Nova Senha    ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#463131" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Label focusTraversable="false" layoutX="75.0" layoutY="160.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: black;" text="Confirmar Senha">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#463131" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <PasswordField fx:id="txtSenhaAntiga" focusTraversable="false" layoutX="75.0" layoutY="50.0" prefHeight="25.0" prefWidth="150.0" promptText="Senha Antiga">
+         <font>
+            <Font size="13.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="txtSenhaNova" focusTraversable="false" layoutX="75.0" layoutY="120.0" prefHeight="25.0" prefWidth="150.0" promptText="Nova Senha">
+         <font>
+            <Font size="13.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="txtConfirmaSenha" focusTraversable="false" layoutX="75.0" layoutY="190.0" prefHeight="25.0" prefWidth="150.0" promptText="Confirmar Senha">
+         <font>
+            <Font size="13.0" />
+         </font></PasswordField>
+      <Button fx:id="btnConfirmar" focusTraversable="false" layoutX="75.0" layoutY="250.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="150.0" stylesheets="@../css/btnSistemaHome.css" text="Confirmar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

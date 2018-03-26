@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.ControleTelaReclamacoes">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../imagens/ialfa.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="81.0" prefHeight="30.0" prefWidth="270.0" style="-fx-background-color: black;" text="        Digite sua reclamação">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#463131" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="15.0" layoutY="6.0" prefHeight="30.0" prefWidth="270.0" style="-fx-background-color: black;" text="             Digite o assunto       ">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#463131" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtAssunto" focusTraversable="false" layoutX="15.0" layoutY="36.0" prefHeight="25.0" prefWidth="270.0" promptText="Assunto">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="txtReclamacao" focusTraversable="false" layoutX="13.0" layoutY="111.0" prefHeight="180.0" prefWidth="270.0" promptText="Reclamação" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextArea>
+      <Button layoutX="-148.0" layoutY="-74.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="btnEnviar" focusTraversable="false" layoutX="75.0" layoutY="300.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="150.0" stylesheets="@../css/btnSistemaHome.css" text="Enviar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

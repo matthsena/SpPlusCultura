@@ -1,0 +1,11 @@
+.button {  
+    -fx-background-color: grey;
+}
+
+.button:hover {
+    -fx-background-color: #3399ff;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: blue;
+}
