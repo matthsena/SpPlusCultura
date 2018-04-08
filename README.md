@@ -14,8 +14,14 @@ Ter a versão 8 ou superior do Java JDK instalado na sua máquina e suporte para
 
 ### Links úteis
 
-***Java JDK***      <http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html>
+***Java JDK***     
 
-***NetBeans***      <https://netbeans.org/downloads/>
+<http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html>
 
-***Scene Builder*** <http://gluonhq.com/products/scene-builder/>
+***NetBeans***   
+
+<https://netbeans.org/downloads/>
+
+***Scene Builder*** 
+
+<http://gluonhq.com/products/scene-builder/>
